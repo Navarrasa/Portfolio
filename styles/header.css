@@ -65,6 +65,7 @@
     margin-right: 3.125rem;
     border: 1px solid var(--border-color);
     cursor: pointer;
+    opacity: 0.4;
 }
 #switch-theme svg{
     fill: var(--btn-variant);
@@ -79,6 +80,6 @@
     display: block;
 }
 #switch-theme:hover{
-    background-color: var(--darkmode-hover-bg);
-    fill: var(--darkmode-hover);
+    opacity: 1;
+    transition: .7s;
 }
