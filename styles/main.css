@@ -30,13 +30,13 @@
 
 html{
     font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
     color: var(--font-color);
     background-color: var(--bg-color);
     height: 100vh;
-    scroll-behavior: smooth;
 }
 #main-page{
     width: 100%;
@@ -70,58 +70,32 @@ body{
     gap: 1.25rem;
     padding: 1.875rem;
     border-radius: 1.25rem;
-}   
-.btn-container{
-    display: flex;
-    gap: 40px;
-    justify-content: end;
-    align-items: center;
 }
-.cv-btn{
-    width: 7.5rem;
-    height: 3.125rem;
-    background-color: var(--btn-color);
-    opacity: 0.6;
-    padding: .625rem;
-    border-radius: 50%;
-    border: none;
-}
-.contact-btn{
-    width: 7.5rem;
-    height: 3.125rem;
-    background-color: var(--btn-color);
-    opacity: 0.6;
-    padding: .625rem;
-    border-radius: 50%;
-    border: none;
-}
-.cv-btn:hover{
-    opacity: 1;
-    transition: 1s;
-}
-.contact-btn:hover{
-    opacity: 1;
-    transition: 1s;
-}
+/* Texto The */
 .text2{
     display: flex;
     justify-content: end;
     align-items: center;
     vertical-align: auto;
 }
+/* Texto Future */
 .text3{
     display: flex;
     margin-left: 3.125rem;
 }
+
 /* About me */
 .about-me{
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin-top: 6.25rem;
     justify-content: center;
     align-items: center;
+    margin-bottom: 500px;
+    margin-top: 200px;
 }
-.aboutme-container{
+.section-container{
     display: flex;
     width: 75%;
     justify-content: center;
@@ -131,14 +105,53 @@ body{
     padding: .625rem;
     padding-top: .625rem;
 }
-.aboutmetext-container{
+.section-title-container{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.aboutmetext{
+.title-text-general-settings{
     display: flex;
     justify-content: left;
     align-items: center;
     margin-left: 10%;
 }
+.text-container{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: .625rem;
+    padding-top: 2.625rem;
+    padding-bottom: 10rem;
+    font-size: 20px;
+}
+.text-about-me{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/* Portfolio */
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+}
+.workdone{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.my-portfolio{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    grid-template-columns: 200px 200px 200px;
+    grid-auto-rows: 300px;
+}
+
+
+
