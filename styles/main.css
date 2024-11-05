@@ -7,25 +7,27 @@
 }
 :root{
     --bg-color: #f1f0ec;
-    --bg-variant: #eeede7;
+    --bg-variant: #e2e0d4;
     --font-color: #111111;
     --btn-color: #aaa276;
-    --btn-variant: #393836;
+    --btn-variant: #918b7e;
     --title-color: #dfddd2;
     --border-color: #111111;
     --darkmode-hover-bg: #393836;
     --darkmode-hover: #dfddd2;
+    --footer-bg: #e0ddd1;
 }
 .darkmode{
     --bg-color: #222221;
     --bg-variant: #1b1b1b;
     --font-color: #ffffff;
     --btn-variant: #cecdca;
-    --btn-color: #aaa276;
+    --btn-color: #6b6a64;
     --title-color: #5a5a5a;
     --border-color: #dbd8d8;
     --darkmode-hover-bg: #cecdca;
     --darkmode-hover: #5a5a5a;
+    --footer-bg: #313130;
 }
 
 html{
@@ -61,7 +63,7 @@ body{
     align-items: center;
     gap: 20%;
     margin-top: 1.25rem;
-    margin-bottom: 12.5rem;
+    margin-bottom: 10rem;
 }
 .title-divider{
     display: flex;
@@ -85,14 +87,17 @@ body{
 }
 
 /* About me */
+#aboutme{
+    padding-bottom: 120px;
+    opacity: 0;
+}
 .about-me{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 6.25rem;
     justify-content: center;
     align-items: center;
-    margin-bottom: 500px;
+    margin-bottom: 300px;
     margin-top: 200px;
 }
 .section-container{
@@ -130,6 +135,10 @@ body{
     padding-bottom: 1rem;
 }
 /* Portfolio */
+#portfolioo{
+    padding-bottom: 120px;
+    opacity: 0;
+}
 .portfolio{
     display: flex;
     flex-direction: column;
@@ -148,10 +157,44 @@ body{
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    grid-template-columns: 200px 200px 200px;
-    grid-auto-rows: 300px;
+    grid-template-columns: 400px 400px;
+    grid-auto-rows: 700px;
+    margin-top: 50px;
+    padding: 30px;
 }
-
-
-
+.portfolio-card-container{
+    height: 600px;
+    width: 350px;
+    background-color: var(--bg-variant);
+    padding: 10px;
+    border: 2px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-card-portfolio{
+    width: 80px;
+    height: 40px;
+    background: none;
+    border-radius: 25%;
+    background-color: var(--btn-variant);
+}
+.btn-card-portfolio:hover{
+    background-color: var(--btn-color);
+    transition: 1s;
+}
+.btn-card-portfolio-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 50px;
+    gap: 10px;
+}
+.text-card-justify{
+    text-align: center;
+}
+.card-img-container{
+    width: 321px;
+    height: 200px;
+}
