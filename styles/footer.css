@@ -4,22 +4,8 @@ footer {
   align-items: center;
   width: 100%;
   height: auto;
-  padding-top: 20px;
-}
-
-.footer-s {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
- 
-  & h1 {
-    font-size: 40px;
-    font-weight: 700;
-    font-family: "Ubuntu Condensed", serif;
-    color: var(--fnt-color);
-  }
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .footer-c {
@@ -37,16 +23,12 @@ footer {
     color: var(--fnt-color);
     opacity: 0.6;
   }
-}
 
-.copyrigth-s {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
+  & div a i:hover {
+    transform: scale(1.5);
+    transition: .7s;
+    opacity: 1;
+  }
 }
 
 .copyrigth-c {
@@ -56,6 +38,92 @@ footer {
   align-items: center;
   text-align: center;
   font-size: 14px;
-  font-weight: 400;
   opacity: 0.6;
+}
+/* Estilos para dispositivos de médio porte (tablets). */
+@media (min-width: 640px) and (max-width: 1023px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .footer-c {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    & div a i {
+      font-size: 48px;
+      color: var(--fnt-color);
+      opacity: 0.6;
+    }
+  
+    & div a i:hover {
+      transform: scale(1.5);
+      transition: .7s;
+      opacity: 1;
+    }
+  }
+  
+  .copyrigth-c {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.6;
+  }
+}
+
+/* Estilos para dispositivos de grande porte (deskops, notebooks) */
+@media (min-width: 1024px){
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .footer-c {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    & div a i {
+      font-size: 48px;
+      color: var(--fnt-color);
+      opacity: 0.6;
+    }
+  
+    & div a i:hover {
+      transform: scale(1.5);
+      transition: .7s;
+      opacity: 1;
+    }
+  }
+  p{
+    font-size: 1.1rem;
+  }
+  .copyrigth-c {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.6;
+  }
 }

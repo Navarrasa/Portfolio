@@ -66,7 +66,7 @@ header {
 }
 
 /* Estilos para dispositivos de médio porte (tablets). */
-@media screen and (min-width: 640px){
+@media (min-width: 640px) and (max-width: 1023px) {
 
   header {
     display: flex;
@@ -136,7 +136,7 @@ header {
 }
 
 /* Estilos para dispositivos de grande porte (deskops, notebooks) */
-@media screen and (min-width: 1024px){
+@media (min-width: 1024px){
 
   header {
     display: flex;
