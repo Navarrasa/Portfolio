@@ -20,6 +20,7 @@ header {
       justify-content: center;
       align-items: center;
       width: 230px;
+      border-radius: 20px;
       backdrop-filter: blur(10px);
   
       & ul{
@@ -95,6 +96,7 @@ header {
         align-items: center;
         width: 300px;
         backdrop-filter: blur(10px);
+        border-radius: 20px;
     
         & ul{
           display: flex;
@@ -172,6 +174,7 @@ header {
         align-items: center;
         width: 350px;
         backdrop-filter: blur(10px);
+        border-radius: 20px;
     
         & ul{
           display: flex;
