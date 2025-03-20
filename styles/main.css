@@ -160,6 +160,8 @@ h3{
   width: 220px;
   height: 100%;
   border: 1px solid var(--bdr-color);
+  background-color: var(--bg--color-revamp);
+  border-radius: 15px;
   padding: 5px;
 
   & div{
@@ -176,15 +178,17 @@ h3{
     text-align: justify;
   }
 
-  & img{
+  & video{
     height: 120px;
     width: 180px;
+    object-fit: cover;
     }
 
   & button{
     background-color: var(--btn-color);
-    padding: 5px;
-    border-radius: 20px;
+    padding: 7px;
+    border-radius: 15px;
+    border: none;
     }
   }
 }
@@ -223,7 +227,7 @@ h3{
   
   .container-projects{
     display: grid;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 300px 300px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -286,14 +290,16 @@ h3{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
+  width: 300px;
   height: 100%;
   border: 1px solid var(--bdr-color);
-  padding: 5px;
+  background-color: var(--bg--color-revamp);
+  border-radius: 15px;
+  padding: 15px;
 
   & div{
-    width: 200px;
-    padding: 10px;
+    width: 100%;
+    padding: 20px;
   
   & h3{
     font-size: 30px;
@@ -303,11 +309,13 @@ h3{
   & p{
     font-size: 14px;
     text-align: justify;
+    height: 150px;
   }
 
-  & img{
-    height: 120px;
-    width: 180px;
+  & video{
+    height: 150px;
+    width: 220px;
+    object-fit: fill;
     }
 
   & button{
@@ -416,7 +424,9 @@ h3{
   width: 300px;
   height: 100%;
   border: 1px solid var(--bdr-color);
-  padding: 5px;
+  background-color: var(--bg--color-revamp);
+  border-radius: 10px;
+  padding: 1rem;
 
   & div{
     width: 250px;
@@ -430,9 +440,10 @@ h3{
   & p{
     font-size: 14px;
     text-align: justify;
+    height: 150px;
   }
 
-  & img{
+  & video{
     height: 150px;
     width: 220px;
     }
@@ -440,7 +451,7 @@ h3{
   & button{
     background-color: var(--btn-color);
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: transparent;  
   }
   & button:hover{
