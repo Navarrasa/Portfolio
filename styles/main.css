@@ -355,7 +355,17 @@ h3{
     user-select: none;
     pointer-events: none;
   }
-  
+  .container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+    text-align: center;
+  }
+
   .container-projects{
     display: grid;
     grid-template-columns: 300px 300px;

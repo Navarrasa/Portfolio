@@ -51,7 +51,17 @@ footer {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  
+  .container-footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+    text-align: center;
+  }
+
   .footer-c {
     display: flex;
     width: 100%;
