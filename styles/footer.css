@@ -1,0 +1,139 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer-c {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ 
+  & div a i {
+    font-size: 32px;
+    color: var(--fnt-color);
+    opacity: 0.6;
+  }
+
+  & div a i:hover {
+    transform: scale(1.5);
+    transition: .7s;
+    opacity: 1;
+  }
+}
+
+.copyrigth-c {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.6;
+}
+/* Estilos para dispositivos de médio porte (tablets). */
+@media (min-width: 640px) and (max-width: 1023px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .container-footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-c {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    & div a i {
+      font-size: 48px;
+      color: var(--fnt-color);
+      opacity: 0.6;
+    }
+  
+    & div a i:hover {
+      transform: scale(1.5);
+      transition: .7s;
+      opacity: 1;
+    }
+  }
+  
+  .copyrigth-c {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.6;
+  }
+}
+
+/* Estilos para dispositivos de grande porte (deskops, notebooks) */
+@media (min-width: 1024px){
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .footer-c {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    & div a i {
+      font-size: 48px;
+      color: var(--fnt-color);
+      opacity: 0.6;
+    }
+  
+    & div a i:hover {
+      transform: scale(1.5);
+      transition: .7s;
+      opacity: 1;
+    }
+  }
+  p{
+    font-size: 1.1rem;
+  }
+  .copyrigth-c {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.6;
+  }
+}
